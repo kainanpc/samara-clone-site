@@ -51,37 +51,62 @@ const HeroSection = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/20">
             <div className="text-center">
               <p className="text-white/80 text-lg mb-2">De <span className="line-through">R$ 497,00</span> por apenas:</p>
-              <div className="text-5xl font-bold text-yellow-300 mb-2">R$ 97</div>
-              <p className="text-white/80">ou 12x de R$ 9,70</p>
+              <div className="text-5xl font-bold text-yellow-300 mb-2">R$ 247</div>
+              <p className="text-white/80">ou 12x de R$ 24,70</p>
               <div className="mt-4 bg-red-500 text-white px-4 py-2 rounded-full inline-block font-semibold animate-pulse">
-                🔥 80% DE DESCONTO
+                🔥 50% DE DESCONTO
               </div>
             </div>
           </div>
           
-          {/* CTA Button */}
-          <Button 
-            size="lg" 
-            className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
-          >
-            🎯 QUERO COMEÇAR AGORA!
-          </Button>
+          {/* CTA Buttons */}
+          <div className="space-y-4">
+            {/* Main CTA Button */}
+            <a 
+              href="https://pay.kiwify.com.br/YaAFjE6?afid=k0Syu8TA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
+              >
+                🎯 QUERO COMEÇAR AGORA - R$ 247!
+              </Button>
+            </a>
+            
+            {/* Offer Button */}
+            <a 
+              href="https://pay.kiwify.com.br/2Tqyr5C?afid=k0Syu8TA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-red-500 hover:bg-red-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
+                🔥 OFERTA ESPECIAL - R$ 147!
+              </Button>
+            </a>
+          </div>
           
           <p className="text-white/70 text-sm mt-4">
             ✅ Acesso imediato • ✅ Garantia de 7 dias • ✅ Certificado incluso
           </p>
         </div>
         
-        {/* Right side - Image placeholder */}
+        {/* Right side - Image */}
         <div className="lg:w-1/2 flex justify-center">
           <div className="relative">
-            <div className="w-80 h-96 bg-gradient-to-br from-white/20 to-white/10 rounded-3xl border border-white/30 backdrop-blur-sm flex items-center justify-center">
-              <div className="text-center text-white">
-                <div className="w-24 h-24 bg-yellow-400/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-4xl">💄</span>
-                </div>
-                <p className="text-lg font-semibold">Samara Duarte</p>
-                <p className="text-sm opacity-80">Especialista em Automaquiagem</p>
+            <div className="w-80 h-96 bg-gradient-to-br from-white/20 to-white/10 rounded-3xl border border-white/30 backdrop-blur-sm overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                alt="Samara Duarte - Especialista em Automaquiagem"
+                className="w-full h-full object-cover rounded-3xl"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 rounded-b-3xl">
+                <p className="text-lg font-semibold text-white">Samara Duarte</p>
+                <p className="text-sm text-white/80">Especialista em Automaquiagem</p>
               </div>
             </div>
             {/* Floating elements */}

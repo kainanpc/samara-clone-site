@@ -36,23 +36,46 @@ const CTASection = () => {
             </div>
             <div className="text-center">
               <p className="text-yellow-300 text-lg mb-2">Hoje apenas:</p>
-              <div className="text-5xl font-bold text-yellow-300 mb-2">R$ 97</div>
-              <p className="text-white/80">ou 12x de R$ 9,70</p>
+              <div className="text-5xl font-bold text-yellow-300 mb-2">R$ 247</div>
+              <p className="text-white/80">ou 12x de R$ 24,70</p>
             </div>
           </div>
           
           <div className="mt-6 bg-red-500 text-white px-6 py-3 rounded-full inline-block font-bold text-xl animate-bounce">
-            🔥 ECONOMIA DE R$ 400,00!
+            🔥 ECONOMIA DE R$ 250,00!
           </div>
         </div>
 
-        {/* Main CTA */}
-        <Button 
-          size="lg" 
-          className="w-full max-w-md mx-auto bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-2xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 mb-6 animate-bounce-in"
-        >
-          🎯 SIM! EU QUERO COMEÇAR AGORA
-        </Button>
+        {/* CTA Buttons */}
+        <div className="space-y-4 mb-6">
+          {/* Main CTA */}
+          <a 
+            href="https://pay.kiwify.com.br/YaAFjE6?afid=k0Syu8TA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button 
+              size="lg" 
+              className="w-full max-w-md mx-auto bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-2xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
+            >
+              🎯 SIM! EU QUERO COMEÇAR - R$ 247
+            </Button>
+          </a>
+
+          {/* Special Offer CTA */}
+          <a 
+            href="https://pay.kiwify.com.br/2Tqyr5C?afid=k0Syu8TA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button 
+              size="lg" 
+              className="w-full max-w-md mx-auto bg-red-500 hover:bg-red-600 text-white font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+            >
+              🔥 OFERTA ESPECIAL - R$ 147
+            </Button>
+          </a>
+        </div>
 
         {/* Guarantees */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90 mb-8">
