@@ -14,55 +14,29 @@ const CTASection = () => {
         {/* Urgency Banner */}
         <div className="inline-flex items-center bg-rose-500 text-white px-6 py-3 rounded-full text-lg font-bold mb-8 animate-pulse">
           <Clock className="w-5 h-5 mr-2" />
-          ÚLTIMAS HORAS! Oferta encerra à meia-noite
+          VALOR PROMOCIONAL POR TEMPO LIMITADO!
         </div>
 
         <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Não perca esta
-          <span className="block text-amber-400">OPORTUNIDADE ÚNICA!</span>
+          CURSO DE
+          <span className="block text-amber-400">AUTOMAQUIAGEM</span>
         </h2>
-
-        <p className="text-xl lg:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
-          Mais de 15.000 mulheres já transformaram suas vidas. 
-          <strong className="text-white"> Seja a próxima!</strong>
-        </p>
 
         {/* Price comparison */}
         <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 mb-8 max-w-2xl mx-auto border border-white/10">
-          <div className="grid md:grid-cols-2 gap-6 items-center">
-            <div className="text-center">
-              <p className="text-gray-300 text-lg mb-2">Preço normal:</p>
-              <div className="text-3xl font-bold text-gray-400 line-through mb-2">R$ 497,00</div>
-            </div>
-            <div className="text-center">
-              <p className="text-amber-400 text-lg mb-2">Hoje apenas:</p>
-              <div className="text-5xl font-bold text-amber-400 mb-2">R$ 247</div>
-              <p className="text-gray-300">ou 12x de R$ 24,70</p>
-            </div>
+          <div className="text-center">
+            <p className="text-gray-300 text-2xl mb-4">de R$ 297,00 por apenas</p>
+            <div className="text-6xl font-bold text-amber-400 mb-4">R$ 147,00</div>
+            <p className="text-xl text-gray-300 mb-4">OU 12X DE R$ 15,20</p>
           </div>
           
           <div className="mt-6 bg-rose-500 text-white px-6 py-3 rounded-full inline-block font-bold text-xl animate-bounce">
-            🔥 ECONOMIA DE R$ 250,00!
+            🔥 VALOR PROMOCIONAL!
           </div>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="space-y-4 mb-6">
-          {/* Main CTA */}
-          <a 
-            href="https://pay.kiwify.com.br/YaAFjE6?afid=k0Syu8TA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button 
-              size="lg" 
-              className="w-full max-w-md mx-auto bg-amber-500 hover:bg-amber-600 text-black font-bold text-2xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
-            >
-              🎯 SIM! EU QUERO COMEÇAR - R$ 247
-            </Button>
-          </a>
-
-          {/* Special Offer CTA */}
+        {/* CTA Button */}
+        <div className="mb-8">
           <a 
             href="https://pay.kiwify.com.br/2Tqyr5C?afid=k0Syu8TA"
             target="_blank"
@@ -70,9 +44,9 @@ const CTASection = () => {
           >
             <Button 
               size="lg" 
-              className="w-full max-w-md mx-auto bg-rose-500 hover:bg-rose-600 text-white font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="w-full max-w-md mx-auto bg-amber-500 hover:bg-amber-600 text-black font-bold text-2xl px-12 py-8 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
             >
-              🔥 OFERTA ESPECIAL - R$ 147
+              EU QUERO!
             </Button>
           </a>
         </div>
@@ -91,14 +65,6 @@ const CTASection = () => {
             <Clock className="w-5 h-5 mr-2 text-green-400" />
             <span>Acesso imediato</span>
           </div>
-        </div>
-
-        {/* Final urgency message */}
-        <div className="bg-amber-400/10 backdrop-blur-sm rounded-2xl p-6 max-w-3xl mx-auto border border-amber-400/20">
-          <p className="text-gray-300 text-lg leading-relaxed">
-            <strong className="text-white">⚠️ ATENÇÃO:</strong> Esta oferta especial é por tempo limitado e as vagas são limitadas. 
-            Não deixe para depois, sua transformação começa hoje!
-          </p>
         </div>
 
         {/* Trust indicators */}

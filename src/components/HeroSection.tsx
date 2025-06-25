@@ -21,15 +21,43 @@ const HeroSection = () => {
           
           {/* Main heading */}
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
-            Curso de
-            <span className="block text-amber-400">AUTOMAQUIAGEM</span>
-            Profissional
+            APRENDA OS
+            <span className="block text-amber-400">SEGREDOS DA</span>
+            AUTOMAQUIAGEM
           </h1>
           
           {/* Subheading */}
           <p className="text-xl lg:text-2xl text-gray-300 mb-8 animate-fade-in">
-            Aprenda as técnicas secretas dos profissionais e se torne uma expert em maquiagem
+            CHEGOU O CURSO DE AUTOMAQUIAGEM + COMPLETO QUE VOCÊ JÁ VIU. 
+            <strong className="text-white"> PELE RESISTENTE COM TRUQUES PROFISSIONAIS!</strong>
           </p>
+          
+          {/* Problems list */}
+          <div className="space-y-4 mb-8 text-left">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+              <p className="text-gray-300 text-lg">
+                <strong className="text-white">Você sente que a sua maquiagem não está durando como deveria?</strong> Depois de um tempo, sua pele fica oleosa?
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              {[
+                "Tem dificuldade em fazer uma maquiagem profissional em casa?",
+                "Não sabe quais produtos usar para a sua pele? Chega de comprar produtos errados!",
+                "Sente desmotivada para sair, pois não sabe qual maquiagem combina com você?"
+              ].map((problem, index) => (
+                <div key={index} className="flex items-start text-gray-300">
+                  <span className="text-rose-400 mr-3 mt-1">•</span>
+                  <span>{problem}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-amber-500/10 to-rose-500/10 rounded-2xl p-6 mb-8 border border-amber-400/20">
+            <p className="text-xl text-white font-bold text-center">
+              CHEGOU A HORA DE MUDAR O JOGO E FAZER UMA MAQUIAGEM PROFISSIONAL EM VOCÊ MESMA!
+            </p>
+          </div>
           
           {/* Social proof */}
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 mb-8">
@@ -43,33 +71,18 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center text-white">
               <Users className="w-5 h-5 mr-2 text-amber-400" />
-              <span className="font-semibold">+15.000 alunas</span>
+              <span className="font-semibold">+5.000 alunas</span>
             </div>
-          </div>
-          
-          {/* Key benefits */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-            {[
-              "Certificado reconhecido",
-              "Acesso vitalício",
-              "Suporte completo",
-              "Garantia de 7 dias"
-            ].map((benefit, index) => (
-              <div key={index} className="flex items-center text-gray-300">
-                <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
-                <span>{benefit}</span>
-              </div>
-            ))}
           </div>
           
           {/* Price section */}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/10">
             <div className="text-center">
-              <p className="text-gray-300 text-lg mb-2">De <span className="line-through">R$ 497,00</span> por apenas:</p>
-              <div className="text-5xl font-bold text-amber-400 mb-2">R$ 247</div>
-              <p className="text-gray-300">ou 12x de R$ 24,70</p>
+              <p className="text-gray-300 text-lg mb-2">De <span className="line-through">R$ 297,00</span> por apenas:</p>
+              <div className="text-5xl font-bold text-amber-400 mb-2">R$ 147</div>
+              <p className="text-gray-300">ou 12x de R$ 15,20</p>
               <div className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-full inline-block font-semibold animate-pulse">
-                🔥 50% DE DESCONTO
+                🔥 VALOR PROMOCIONAL
               </div>
             </div>
           </div>
@@ -78,7 +91,7 @@ const HeroSection = () => {
           <div className="space-y-4">
             {/* Main CTA Button */}
             <a 
-              href="https://pay.kiwify.com.br/YaAFjE6?afid=k0Syu8TA"
+              href="https://pay.kiwify.com.br/2Tqyr5C?afid=k0Syu8TA"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,21 +99,7 @@ const HeroSection = () => {
                 size="lg" 
                 className="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-black font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
               >
-                🎯 QUERO COMEÇAR AGORA - R$ 247!
-              </Button>
-            </a>
-            
-            {/* Offer Button */}
-            <a 
-              href="https://pay.kiwify.com.br/2Tqyr5C?afid=k0Syu8TA"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto bg-rose-500 hover:bg-rose-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
-              >
-                🔥 OFERTA ESPECIAL - R$ 147!
+                🎯 EU QUERO APRENDER - R$ 147!
               </Button>
             </a>
           </div>

@@ -4,51 +4,34 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const FAQSection = () => {
   const faqs = [
     {
-      question: "O curso é adequado para iniciantes?",
-      answer: "Sim! O curso foi desenvolvido especialmente para mulheres que nunca se maquiaram ou têm pouca experiência. Começamos do absoluto básico e evoluímos gradualmente até técnicas mais avançadas."
+      question: "PARA QUEM É ESSE CURSO",
+      answer: "Este curso é perfeito para qualquer mulher que deseja aprender a se maquiar profissionalmente em casa. Desde iniciantes completas até quem já tem algum conhecimento e quer aperfeiçoar suas técnicas. Se você tem dificuldade em fazer sua maquiagem durar, não sabe quais produtos usar ou quer aprender técnicas profissionais, este curso é para você!"
     },
     {
-      question: "Por quanto tempo terei acesso ao curso?",
-      answer: "Você terá acesso vitalício ao curso! Poderá assistir às aulas quantas vezes quiser, no seu ritmo e quando for mais conveniente para você."
+      question: "POSSO ASSISTIR O CONTEÚDO ATÉ QUE DIA?",
+      answer: "Você terá acesso vitalício ao curso! Isso significa que poderá assistir às aulas quantas vezes quiser, no seu ritmo e quando for mais conveniente para você. O conteúdo ficará disponível para sempre em sua área de membros."
     },
     {
-      question: "Preciso comprar produtos caros para fazer o curso?",
-      answer: "Não! Uma das grandes vantagens do meu método é ensinar você a conseguir resultados incríveis com produtos acessíveis. Dou dicas de produtos bons e baratos em todas as aulas."
+      question: "POSSO COMPRAR PARA DAR DE PRESENTE?",
+      answer: "Sim! Você pode adquirir o curso como presente. Após a compra, você receberá os dados de acesso que poderá repassar para a pessoa presenteada. É um presente incrível para qualquer mulher que deseja se sentir mais bonita e confiante!"
     },
     {
-      question: "Como funciona a garantia?",
-      answer: "Oferecemos garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeita com o curso, devolvemos 100% do seu investimento, sem perguntas."
+      question: "COMO FUNCIONA O CERTIFICADO DE CONCLUSÃO?",
+      answer: "Ao concluir todas as aulas do curso, você receberá automaticamente um certificado digital de conclusão. Este certificado comprova que você completou o Curso de Automaquiagem da Samara Duarte e pode ser usado para comprovar seus conhecimentos na área."
     },
     {
-      question: "O curso funciona para todos os tipos de pele?",
-      answer: "Sim! O curso aborda técnicas para todos os tipos e tons de pele. Ensino adaptações específicas para pele oleosa, seca, mista e sensível, além de dicas para diferentes tons de pele."
+      question: "COMO ACESSAR O CURSO",
+      answer: "Após a confirmação do pagamento, você receberá por e-mail os dados de acesso à plataforma do curso. O acesso é liberado imediatamente após a confirmação da compra. Você poderá assistir pelo computador, tablet ou celular, onde e quando quiser."
     },
     {
-      question: "Vou receber certificado?",
-      answer: "Sim! Ao concluir o curso, você receberá um certificado digital de conclusão que comprova seu aprendizado em automaquiagem."
-    },
-    {
-      question: "Como posso tirar dúvidas durante o curso?",
-      answer: "Você terá acesso ao nosso grupo VIP no WhatsApp, onde poderá tirar dúvidas diretamente comigo e com outras alunas. Também respondo dúvidas por email."
-    },
-    {
-      question: "O pagamento é seguro?",
-      answer: "Totalmente seguro! Utilizamos a plataforma de pagamento mais segura do Brasil, com criptografia SSL e certificação PCI. Seus dados estão 100% protegidos."
+      question: "COMO FAÇO PARA COMPRAR?",
+      answer: "É muito simples! Clique no botão 'EU QUERO!' e você será direcionado para nossa página de pagamento segura. Você pode pagar no cartão de crédito (até 12x) ou no PIX com desconto adicional. Após a confirmação do pagamento, você receberá os dados de acesso imediatamente."
     }
   ];
 
   return (
     <div className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Dúvidas Frequentes
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tire todas as suas dúvidas sobre o curso de automaquiagem
-          </p>
-        </div>
-
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
@@ -57,10 +40,10 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="bg-white rounded-2xl shadow-lg border-0 overflow-hidden"
               >
-                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-800 hover:text-pink-600 transition-colors duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-gray-800 hover:text-amber-600 transition-colors duration-300 text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -68,20 +51,17 @@ const FAQSection = () => {
           </Accordion>
         </div>
 
-        {/* Contact CTA */}
-        <div className="text-center mt-12">
-          <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 max-w-2xl mx-auto border border-pink-200">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Ainda tem dúvidas?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Entre em contato conosco pelo WhatsApp e tire todas as suas dúvidas antes de se inscrever.
-            </p>
-            <div className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded-full transition-colors duration-300 cursor-pointer">
-              <span className="text-xl mr-2">📱</span>
-              Falar no WhatsApp
-            </div>
-          </div>
+        {/* Final CTA */}
+        <div className="text-center mt-16">
+          <a 
+            href="https://pay.kiwify.com.br/2Tqyr5C?afid=k0Syu8TA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white font-bold text-2xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in">
+              COMPRAR AGORA COM DESCONTO
+            </button>
+          </a>
         </div>
       </div>
     </div>
