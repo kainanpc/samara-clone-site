@@ -1,20 +1,20 @@
 
 import { Button } from "@/components/ui/button";
-import { Clock, Star, Users } from "lucide-react";
+import { Clock, Star, Users, CheckCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-500 via-purple-600 to-pink-700 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-black/20"></div>
-      <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse-slow"></div>
-      <div className="absolute bottom-20 right-20 w-24 h-24 bg-yellow-300/20 rounded-full blur-lg animate-pulse-slow"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute top-10 left-10 w-32 h-32 bg-amber-400/10 rounded-full blur-xl animate-pulse-slow"></div>
+      <div className="absolute bottom-20 right-20 w-24 h-24 bg-rose-400/10 rounded-full blur-lg animate-pulse-slow"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center min-h-screen">
         {/* Left side - Content */}
         <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
           {/* Badge */}
-          <div className="inline-flex items-center bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-bounce-in">
+          <div className="inline-flex items-center bg-amber-500 text-black px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-bounce-in">
             <Clock className="w-4 h-4 mr-2" />
             OFERTA POR TEMPO LIMITADO!
           </div>
@@ -22,12 +22,12 @@ const HeroSection = () => {
           {/* Main heading */}
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
             Curso de
-            <span className="block text-yellow-300">AUTOMAQUIAGEM</span>
+            <span className="block text-amber-400">AUTOMAQUIAGEM</span>
             Profissional
           </h1>
           
           {/* Subheading */}
-          <p className="text-xl lg:text-2xl text-white/90 mb-8 animate-fade-in">
+          <p className="text-xl lg:text-2xl text-gray-300 mb-8 animate-fade-in">
             Aprenda as técnicas secretas dos profissionais e se torne uma expert em maquiagem
           </p>
           
@@ -36,24 +36,39 @@ const HeroSection = () => {
             <div className="flex items-center text-white">
               <div className="flex mr-2">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                 ))}
               </div>
               <span className="font-semibold">4.9/5 (2.847 avaliações)</span>
             </div>
             <div className="flex items-center text-white">
-              <Users className="w-5 h-5 mr-2 text-yellow-400" />
+              <Users className="w-5 h-5 mr-2 text-amber-400" />
               <span className="font-semibold">+15.000 alunas</span>
             </div>
           </div>
           
+          {/* Key benefits */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {[
+              "Certificado reconhecido",
+              "Acesso vitalício",
+              "Suporte completo",
+              "Garantia de 7 dias"
+            ].map((benefit, index) => (
+              <div key={index} className="flex items-center text-gray-300">
+                <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
+                <span>{benefit}</span>
+              </div>
+            ))}
+          </div>
+          
           {/* Price section */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/20">
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/10">
             <div className="text-center">
-              <p className="text-white/80 text-lg mb-2">De <span className="line-through">R$ 497,00</span> por apenas:</p>
-              <div className="text-5xl font-bold text-yellow-300 mb-2">R$ 247</div>
-              <p className="text-white/80">ou 12x de R$ 24,70</p>
-              <div className="mt-4 bg-red-500 text-white px-4 py-2 rounded-full inline-block font-semibold animate-pulse">
+              <p className="text-gray-300 text-lg mb-2">De <span className="line-through">R$ 497,00</span> por apenas:</p>
+              <div className="text-5xl font-bold text-amber-400 mb-2">R$ 247</div>
+              <p className="text-gray-300">ou 12x de R$ 24,70</p>
+              <div className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-full inline-block font-semibold animate-pulse">
                 🔥 50% DE DESCONTO
               </div>
             </div>
@@ -69,7 +84,7 @@ const HeroSection = () => {
             >
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
+                className="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-black font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
               >
                 🎯 QUERO COMEÇAR AGORA - R$ 247!
               </Button>
@@ -83,14 +98,14 @@ const HeroSection = () => {
             >
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-red-500 hover:bg-red-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="w-full sm:w-auto bg-rose-500 hover:bg-rose-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 🔥 OFERTA ESPECIAL - R$ 147!
               </Button>
             </a>
           </div>
           
-          <p className="text-white/70 text-sm mt-4">
+          <p className="text-gray-400 text-sm mt-4">
             ✅ Acesso imediato • ✅ Garantia de 7 dias • ✅ Certificado incluso
           </p>
         </div>
@@ -98,19 +113,19 @@ const HeroSection = () => {
         {/* Right side - Image */}
         <div className="lg:w-1/2 flex justify-center">
           <div className="relative">
-            <div className="w-80 h-96 bg-gradient-to-br from-white/20 to-white/10 rounded-3xl border border-white/30 backdrop-blur-sm overflow-hidden">
+            <div className="w-80 h-96 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl border border-white/20 backdrop-blur-sm overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                src="/lovable-uploads/f904ea98-7f29-420f-9f2e-72b599335362.png"
                 alt="Samara Duarte - Especialista em Automaquiagem"
                 className="w-full h-full object-cover rounded-3xl"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 rounded-b-3xl">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-3xl">
                 <p className="text-lg font-semibold text-white">Samara Duarte</p>
-                <p className="text-sm text-white/80">Especialista em Automaquiagem</p>
+                <p className="text-sm text-gray-300">Especialista em Automaquiagem</p>
               </div>
             </div>
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 bg-yellow-400 rounded-full p-3 animate-bounce-in">
+            <div className="absolute -top-4 -right-4 bg-amber-500 rounded-full p-3 animate-bounce-in">
               <Star className="w-6 h-6 text-black" />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-white/20 backdrop-blur-sm rounded-full p-3 animate-bounce-in">
