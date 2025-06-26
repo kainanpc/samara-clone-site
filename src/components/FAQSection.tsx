@@ -30,7 +30,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <div className="py-20 bg-gradient-to-b from-slate-900 to-slate-800">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
@@ -38,12 +38,12 @@ const FAQSection = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-white rounded-2xl shadow-lg border-0 overflow-hidden"
+                className="bg-slate-700/50 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-600 overflow-hidden"
               >
-                <AccordionTrigger className="px-6 py-4 text-left font-bold text-gray-800 hover:text-amber-600 transition-colors duration-300 text-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-white hover:text-rose-400 transition-colors duration-300 text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed text-base">
+                <AccordionContent className="px-6 pb-4 text-gray-300 leading-relaxed text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -58,7 +58,7 @@ const FAQSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white font-bold text-2xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in">
+            <button className="bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-bold text-2xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in">
               COMPRAR AGORA COM DESCONTO
             </button>
           </a>

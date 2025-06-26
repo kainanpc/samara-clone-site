@@ -4,9 +4,9 @@ import { Clock, Shield, CreditCard, Target, Smartphone, Award } from "lucide-rea
 
 const CTASection = () => {
   return (
-    <div className="py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden">
+    <div className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute top-20 left-20 w-40 h-40 bg-rose-400/10 rounded-full blur-2xl"></div>
       <div className="absolute bottom-20 right-20 w-32 h-32 bg-slate-400/10 rounded-full blur-xl"></div>
       
@@ -23,7 +23,7 @@ const CTASection = () => {
         </h2>
 
         {/* Price comparison */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-8 max-w-2xl mx-auto border border-white/20 shadow-2xl">
+        <div className="bg-slate-800/60 backdrop-blur-sm rounded-3xl p-8 mb-8 max-w-2xl mx-auto border border-slate-700 shadow-2xl">
           <div className="text-center">
             <p className="text-gray-300 text-2xl mb-4">de R$ 297,00 por apenas</p>
             <div className="text-6xl font-bold text-rose-400 mb-4">R$ 147,00</div>

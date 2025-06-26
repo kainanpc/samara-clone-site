@@ -1,10 +1,10 @@
 
 const FooterSection = () => {
   return (
-    <footer className="bg-slate-800 text-white py-12">
+    <footer className="bg-slate-900 text-white py-12 border-t border-slate-800">
       <div className="container mx-auto px-4">
         {/* Bottom */}
-        <div className="border-t border-slate-600 pt-8 text-center text-gray-300">
+        <div className="border-t border-slate-700 pt-8 text-center text-gray-400">
           <p className="mb-4">
             © 2024 Samara Duarte - Curso de Automaquiagem. Todos os direitos reservados.
           </p>

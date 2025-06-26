@@ -37,20 +37,20 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <div className="py-20 bg-gradient-to-b from-slate-900 to-slate-800">
       <div className="container mx-auto px-4">
         {/* Stats Section */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl text-gray-600 mb-8">
+          <h2 className="text-2xl text-gray-300 mb-8">
             Veja o que os meus alunos estão dizendo sobre o curso.<br/>
             Eles são pessoas como você e conseguiram esses resultados.
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-16">
             {stats.map((stat, index) => (
-              <div key={index} className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center text-white">
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-amber-400" />
-                <div className="text-4xl font-bold text-amber-400 mb-2">{stat.number}</div>
+              <div key={index} className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-8 text-center text-white border border-slate-600">
+                <stat.icon className="w-12 h-12 mx-auto mb-4 text-rose-400" />
+                <div className="text-4xl font-bold text-rose-400 mb-2">{stat.number}</div>
                 <div className="text-gray-300">{stat.text}</div>
               </div>
             ))}
@@ -59,9 +59,9 @@ const BenefitsSection = () => {
 
         {/* Course Content */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             O que você vai encontrar no curso<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-rose-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-rose-600">
               Exclusivo de AutoMaquiagem?
             </span>
           </h2>
@@ -69,13 +69,13 @@ const BenefitsSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {courseModules.map((module, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg bg-white">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-slate-700 shadow-lg bg-slate-800/50 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-rose-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-rose-500 to-rose-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <module.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{module.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{module.description}</p>
+                <h3 className="text-xl font-bold text-white mb-3">{module.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{module.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -88,7 +88,7 @@ const BenefitsSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white font-bold text-2xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in">
+            <button className="bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-bold text-2xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in">
               EU QUERO!
             </button>
           </a>
