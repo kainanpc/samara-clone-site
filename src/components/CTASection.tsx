@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Clock, Shield, CreditCard } from "lucide-react";
+import { Clock, Shield, CreditCard, Flame, Smartphone, Award } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -30,8 +30,9 @@ const CTASection = () => {
             <p className="text-xl text-gray-300 mb-4">OU 12X DE R$ 15,20</p>
           </div>
           
-          <div className="mt-6 bg-rose-500 text-white px-6 py-3 rounded-full inline-block font-bold text-xl animate-bounce">
-            🔥 VALOR PROMOCIONAL!
+          <div className="mt-6 bg-rose-500 text-white px-6 py-3 rounded-full inline-flex items-center font-bold text-xl animate-bounce">
+            <Flame className="w-5 h-5 mr-2" />
+            VALOR PROMOCIONAL!
           </div>
         </div>
 
@@ -70,15 +71,15 @@ const CTASection = () => {
         {/* Trust indicators */}
         <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-gray-400">
           <div className="flex items-center">
-            <span className="text-2xl mr-2">🔒</span>
+            <Shield className="w-6 h-6 mr-2 text-amber-400" />
             <span>Site 100% Seguro</span>
           </div>
           <div className="flex items-center">
-            <span className="text-2xl mr-2">📱</span>
+            <Smartphone className="w-6 h-6 mr-2 text-amber-400" />
             <span>Acesso Mobile</span>
           </div>
           <div className="flex items-center">
-            <span className="text-2xl mr-2">🎓</span>
+            <Award className="w-6 h-6 mr-2 text-amber-400" />
             <span>Certificado Incluso</span>
           </div>
         </div>

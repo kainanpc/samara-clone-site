@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Clock, Star, Users, CheckCircle } from "lucide-react";
+import { Clock, Star, Users, CheckCircle, Target } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -82,7 +82,7 @@ const HeroSection = () => {
               <div className="text-5xl font-bold text-amber-400 mb-2">R$ 147</div>
               <p className="text-gray-300">ou 12x de R$ 15,20</p>
               <div className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-full inline-block font-semibold animate-pulse">
-                🔥 VALOR PROMOCIONAL
+                VALOR PROMOCIONAL
               </div>
             </div>
           </div>
@@ -99,14 +99,26 @@ const HeroSection = () => {
                 size="lg" 
                 className="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-black font-bold text-xl px-8 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce-in"
               >
-                🎯 EU QUERO APRENDER - R$ 147!
+                <Target className="w-5 h-5 mr-2" />
+                EU QUERO APRENDER - R$ 147!
               </Button>
             </a>
           </div>
           
-          <p className="text-gray-400 text-sm mt-4">
-            ✅ Acesso imediato • ✅ Garantia de 7 dias • ✅ Certificado incluso
-          </p>
+          <div className="mt-4 flex flex-wrap justify-center lg:justify-start items-center gap-4 text-gray-400 text-sm">
+            <div className="flex items-center">
+              <CheckCircle className="w-4 h-4 mr-1 text-green-400" />
+              <span>Acesso imediato</span>
+            </div>
+            <div className="flex items-center">
+              <CheckCircle className="w-4 h-4 mr-1 text-green-400" />
+              <span>Garantia de 7 dias</span>
+            </div>
+            <div className="flex items-center">
+              <CheckCircle className="w-4 h-4 mr-1 text-green-400" />
+              <span>Certificado incluso</span>
+            </div>
+          </div>
         </div>
         
         {/* Right side - Image */}
@@ -128,7 +140,7 @@ const HeroSection = () => {
               <Star className="w-6 h-6 text-black" />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-white/20 backdrop-blur-sm rounded-full p-3 animate-bounce-in">
-              <span className="text-2xl">✨</span>
+              <Star className="w-6 h-6 text-amber-400" />
             </div>
           </div>
         </div>
